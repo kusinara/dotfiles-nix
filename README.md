@@ -1,17 +1,4 @@
-[![Made with Doom Emacs](https://img.shields.io/badge/Made_with-Doom_Emacs-blueviolet.svg?style=flat-square&logo=GNU%20Emacs&logoColor=white)](https://github.com/hlissner/doom-emacs)
-[![NixOS 21.05](https://img.shields.io/badge/NixOS-v21.05-blue.svg?style=flat-square&logo=NixOS&logoColor=white)](https://nixos.org)
-
-**Hey,** you. You're finally awake. You were trying to configure your OS declaratively, right? Walked right into that NixOS ambush, same as us, and those dotfiles over there.
-
-<img src="/../screenshots/alucard/fakebusy.png" width="100%" />
-
-<p align="center">
-<span><img src="/../screenshots/alucard/desktop.png" height="178" /></span>
-<span><img src="/../screenshots/alucard/rofi.png" height="178" /></span>
-<span><img src="/../screenshots/alucard/tiling.png" height="178" /></span>
-</p>
-
-------
+	------
 
 | | |
 |-|-|
@@ -33,7 +20,7 @@
 3. Do your partitions and mount your root to `/mnt` ([for example](hosts/kuro/README.org))
 4. Install these dotfiles:
 5. `nix-shell -p git nixFlakes`
-6. `git clone https://github.com/hlissner/dotfiles /mnt/etc/nixos`
+6. `git clone https://github.com/kusinara/dotfiles /mnt/etc/nixos`
 7. Install NixOS: `nixos-install --root /mnt --flake /mnt/etc/nixos#XYZ`, where
    `XYZ` is [the host you want to install](hosts/).  Use `#generic` for a
    simple, universal config, or create a sub-directory in `hosts/` for your device. See [host/kuro] for an example.
